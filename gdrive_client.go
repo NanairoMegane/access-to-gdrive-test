@@ -110,5 +110,4 @@ func searchFileInGoogleDrive(client *http.Client, mimeType string, name string) 
 			fmt.Printf("\t%s (%s)\n", f.Name, f.Id)
 		}
 	}
-
 }
