@@ -1,0 +1,19 @@
+
+# どうやって MyDrive を参照する？
+- List を実行する時、q パラメータで "root" in parents を指定する。
+ex. srv.Files.List().Q(`"root" in parents`).PageSize(10).Fields("nextPageToken, files(id, name)").Do()
+
+# 検索条件の設定は？
+- Q を重ねる
+
+# 名前の検索は？
+- name contains "xxx"
+- 前方一致の模様
+
+# Drive 上の画像の URL は？
+- https://drive.google.com/uc?id={ID}
+ex. https://drive.google.com/uc?id=1t2SZEw79McnS0T_uKE8PjMyg_Jc4GhWS
+
+# どうやって GDriveAPI を有効化する？
+- GCP の API とサービス / ライブラリ で探せる
+
